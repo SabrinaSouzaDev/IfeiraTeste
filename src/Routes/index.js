@@ -7,12 +7,14 @@ import Home from '../views/Home';
 
 const Stack = createNativeStackNavigator();
 
-export default function Router(){
+export default function Routes(){
 
-    return {
+    return (
         <NavigationContainer>
         <Stack.Navigator>
-        <Stack.Screen name='Login' component={Login}
+        <Stack.Screen name='Login' component={Login}></Stack.Screen>
+        <Stack.Screen name='Home' component={Home}></Stack.Screen>
         </Stack.Navigator>
-        </NavigationContainer>    };
+        </NavigationContainer>    
+     ) ;
 }

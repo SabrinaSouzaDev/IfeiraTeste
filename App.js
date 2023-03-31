@@ -1,20 +1,36 @@
 import React from "react";
-import { View, Text, StyleSheet, SafeAreaView } from 'react-native';
+import { View, StatusBar, StyleSheet } from "react-native";
+import Routes from './src/Routes';
+import { TextStyle } from "./components/TextStyles";
+
+import Header from "./components/Heder";
+
+
 
 export default function App(){
-  <SafeAreaView style={styles.container}>
-  <View>
+  return  (
+  <View style={style.container}>
+  <StatusBar barStyle='light-content' backgroundColor='#000' />
 
-   <Text>oifdddddddddddddddddddddddddddddddd</Text>
-  
+ 
+  <Header />
   </View>
-  </SafeAreaView>
+  
+    )
+
 }
 
-const styles = StyleSheet.create({
+const style = StyleSheet.create ({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center'
-  }
-})
+    //  alignItems: 'center',
+    //   justifyContent: 'center'
+    },
+    // box: {
+    //   backgroundColor: '#0000',
+    //   width: width - 90, height: height -350,
+    //   borderRadius: 20
+    // }
+  } 
+
+)
